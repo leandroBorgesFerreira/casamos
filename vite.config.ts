@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/leandroBorgesFerreira/gabriela-leandro-celebration-site-24', 
+  base: '/gabriela-leandro-celebration-site-24/',
   server: {
     host: "::",
     port: 8080,
