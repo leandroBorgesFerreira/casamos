@@ -1,30 +1,43 @@
 
 import React from 'react';
+import { ChevronDown } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center z-0" 
-        style={{ 
-          backgroundImage: 'url("/lovable-uploads/feb9571b-a58f-43b1-b04b-f9ecb73e25d4.png")',
-          filter: 'brightness(0.7)',
-        }}
-      ></div>
-      
-      <div className="container mx-auto px-4 relative z-10 text-center text-white">
-        <h1 className="text-5xl md:text-7xl font-serif mb-4 drop-shadow-lg">
+    <section 
+      id="home" 
+      className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-[#f5eee8]"
+    >
+      <div className="container mx-auto px-4 relative z-10 text-center">
+        <p className="text-gray-600 tracking-[0.2em] uppercase mb-6">WE ARE GETTING MARRIED</p>
+        
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif mb-6 text-[#333333]">
           Gabriela <span className="font-serif">&</span> Leandro
         </h1>
-        <p className="text-xl md:text-2xl mb-8 drop-shadow-md">October 5-7, 2025</p>
-        <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto drop-shadow-md">
-          Join us for our celebration of love at Château de Villette, France
+        
+        <p className="text-lg md:text-xl text-gray-700 mb-10 font-serif italic">
+          October 5-7, 2025 • Celebration of Love
         </p>
-        <a 
-          href="#rsvp" 
-          className="inline-block bg-amber-700 hover:bg-amber-800 text-white px-8 py-3 rounded-full text-lg transition-colors duration-300"
-        >
-          RSVP Now
+        
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+          <a 
+            href="#events" 
+            className="inline-block bg-[#d8e2d7] hover:bg-[#c5d3c3] text-gray-700 px-8 py-3 rounded-md text-lg transition-colors duration-300 min-w-[200px]"
+          >
+            View Events
+          </a>
+          <a 
+            href="#rsvp" 
+            className="inline-block bg-white hover:bg-gray-100 text-gray-700 px-8 py-3 border border-gray-300 rounded-md text-lg transition-colors duration-300 min-w-[200px]"
+          >
+            RSVP Now
+          </a>
+        </div>
+      </div>
+      
+      <div className="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce">
+        <a href="#venue" className="text-gray-500 hover:text-gray-800 transition-colors">
+          <ChevronDown size={30} />
         </a>
       </div>
     </section>
