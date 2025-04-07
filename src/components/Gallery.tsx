@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Dialog, DialogContent } from "./ui/dialog";
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
@@ -58,7 +57,7 @@ const Gallery = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-serif text-center mb-3">Our Venue</h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          Join us at the beautiful Château de Villette in France, where we'll celebrate our special day surrounded by historic architecture and breathtaking gardens.
+          Join us at the beautiful Château de Vallery in France, where we'll celebrate our special day surrounded by historic architecture and breathtaking gardens.
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
