@@ -6,9 +6,9 @@ const events = [
     id: 1,
     date: "October 5, 2025",
     day: "Sunday",
-    title: "Welcome Dinner",
-    time: "7:00 PM - 10:00 PM",
-    description: "Join us for a casual welcome dinner as we kick off our wedding celebration weekend. Meet and mingle with other guests while enjoying delicious food and drinks.",
+    title: "Wedding Ceremony & Reception",
+    time: "4:00 PM - 12:00 AM",
+    description: "Our wedding ceremony will take place followed by cocktail hour, dinner, and dancing to celebrate our union.",
     location: "Chateau de Vallery",
     address: "Chateau de Vallery, Vallery, France"
   },
@@ -26,9 +26,9 @@ const events = [
     id: 3,
     date: "October 7, 2025",
     day: "Tuesday",
-    title: "Wedding Ceremony & Reception",
-    time: "4:00 PM - 12:00 AM",
-    description: "Our wedding ceremony will take place followed by cocktail hour, dinner, and dancing to celebrate our union.",
+    title: "Goodbye Breakfast & Love",
+    time: "9:00 AM - 12:00 PM",
+    description: "Join us for a farewell breakfast as we conclude our wedding celebration weekend. Share your favorite moments from the festivities before departing.",
     location: "Chateau de Vallery",
     address: "Chateau de Vallery, Vallery, France"
   }
