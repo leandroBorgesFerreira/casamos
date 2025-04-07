@@ -76,7 +76,26 @@ const EventsSection = () => {
   return (
     <section id="events" className="wedding-section bg-gradient-to-b from-wedding-cream to-wedding-blush/20">
       <div className="wedding-container">
-        <h2 className="fancy-heading text-4xl md:text-5xl mb-16">Our Events</h2>
+        <h2 className="fancy-heading text-4xl md:text-5xl mb-10">Our Events</h2>
+        
+        <div className="flex justify-center mb-12">
+          <div className="relative max-w-md mx-auto">
+            <img 
+              src="/lovable-uploads/3ae4f115-97ce-42ef-91dc-04d2b3ffaea6.png" 
+              alt="Chateau de Vallery" 
+              className="w-full rounded-lg shadow-lg border-4 border-white"
+            />
+            <div className="absolute -bottom-5 left-0 right-0 text-center">
+              <span className="bg-wedding-sage px-6 py-2 rounded-full text-white font-serif italic inline-block shadow-md">
+                Chateau de Vallery
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        <p className="text-center text-lg max-w-3xl mx-auto mb-12 font-serif italic text-wedding-charcoal/80">
+          All our wedding festivities will be held at the beautiful Chateau de Vallery, a historic French castle that will provide a romantic backdrop for our celebration.
+        </p>
         
         <div className="flex flex-col gap-8">
           {events.map((event, index) => (
