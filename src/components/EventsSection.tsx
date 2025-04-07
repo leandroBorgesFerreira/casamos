@@ -16,20 +16,20 @@ const events = [
     id: 2,
     date: "October 6, 2025",
     day: "Monday",
-    title: "Wedding Ceremony & Reception",
-    time: "4:00 PM - 12:00 AM",
-    description: "Our wedding ceremony will take place followed by cocktail hour, dinner, and dancing to celebrate our union.",
-    location: "Oceanview Resort",
+    title: "Gala Dinner",
+    time: "7:00 PM - 11:00 PM",
+    description: "An elegant evening of fine dining and entertainment to celebrate our upcoming union.",
+    location: "Grand Ballroom",
     address: "456 Coastline Drive, Beachside"
   },
   {
     id: 3,
     date: "October 7, 2025",
     day: "Tuesday",
-    title: "Farewell Brunch",
-    time: "10:00 AM - 1:00 PM",
-    description: "A relaxed brunch to say goodbye to our guests and thank everyone for sharing in our special weekend.",
-    location: "Sunrise Cafe",
+    title: "Wedding Ceremony & Reception",
+    time: "4:00 PM - 12:00 AM",
+    description: "Our wedding ceremony will take place followed by cocktail hour, dinner, and dancing to celebrate our union.",
+    location: "Oceanview Resort",
     address: "789 Morning Ave, Lakeside"
   }
 ];
