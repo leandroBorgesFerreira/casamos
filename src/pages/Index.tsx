@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 import EventsSection from "../components/EventsSection";
 import Gallery from "../components/Gallery";
 import RSVPForm from "../components/RSVPForm";
-import GalleryTeaser from "../components/GalleryTeaser";
+import Accommodation from "../components/Accommodation";
 import Countdown from "../components/Countdown";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
@@ -17,6 +17,7 @@ const Index = () => {
       <Countdown />
       <Gallery />
       <EventsSection />
+      <Accommodation />
       <RSVPForm />
       <Footer />
     </div>
