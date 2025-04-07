@@ -9,8 +9,8 @@ const events = [
     title: "Welcome Dinner",
     time: "7:00 PM - 10:00 PM",
     description: "Join us for a casual welcome dinner as we kick off our wedding celebration weekend. Meet and mingle with other guests while enjoying delicious food and drinks.",
-    location: "The Garden Restaurant",
-    address: "123 Blossom St, Garden City"
+    location: "Chateau de Vallery",
+    address: "Chateau de Vallery, Vallery, France"
   },
   {
     id: 2,
@@ -19,8 +19,8 @@ const events = [
     title: "Gala Dinner",
     time: "7:00 PM - 11:00 PM",
     description: "An elegant evening of fine dining and entertainment to celebrate our upcoming union.",
-    location: "Grand Ballroom",
-    address: "456 Coastline Drive, Beachside"
+    location: "Chateau de Vallery",
+    address: "Chateau de Vallery, Vallery, France"
   },
   {
     id: 3,
@@ -29,8 +29,8 @@ const events = [
     title: "Wedding Ceremony & Reception",
     time: "4:00 PM - 12:00 AM",
     description: "Our wedding ceremony will take place followed by cocktail hour, dinner, and dancing to celebrate our union.",
-    location: "Oceanview Resort",
-    address: "789 Morning Ave, Lakeside"
+    location: "Chateau de Vallery",
+    address: "Chateau de Vallery, Vallery, France"
   }
 ];
 
