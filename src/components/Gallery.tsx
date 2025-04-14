@@ -10,7 +10,7 @@ const Gallery = () => {
     {
       src: "/lovable-uploads/7330bc96-5f5d-4167-a706-439027e4adcd.png",
       alt: "Beautiful chateau pool area with stone buildings and greenery",
-      caption: "The Chateau Pool - Perfect for the welcome reception"
+      caption: "The Chateau Pool"
     },
     {
       src: "/lovable-uploads/21a972c1-c66d-4d94-8418-60745ca16608.png",
@@ -20,7 +20,7 @@ const Gallery = () => {
     {
       src: "/lovable-uploads/feb9571b-a58f-43b1-b04b-f9ecb73e25d4.png",
       alt: "Front view of the main chateau building and stone wall",
-      caption: "The Main Château - Our ceremony location"
+      caption: "The Main Château"
     },
     {
       src: "/lovable-uploads/231b5b75-3e7e-4db7-a313-37a7571824c5.png",
@@ -30,12 +30,12 @@ const Gallery = () => {
     {
       src: "/lovable-uploads/9e5f8c80-0608-4ba1-91a9-cda04b660f38.png",
       alt: "Garden path with statues leading to stone building",
-      caption: "The Garden Path - Reception cocktail hour"
+      caption: "The Garden Path"
     },
     {
       src: "/lovable-uploads/9b9a8c09-6cd4-4180-b68b-6b6768cfebe1.png",
       alt: "Historic wine cellar with candles and wine racks",
-      caption: "The Historic Wine Cellar - Where we'll host the rehearsal dinner"
+      caption: "The Historic Wine Cellar"
     },
   ];
 

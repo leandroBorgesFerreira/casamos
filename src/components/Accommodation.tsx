@@ -55,8 +55,8 @@ const Accommodation = () => {
                       <h4 className="text-lg font-serif text-wedding-charcoal font-medium mb-2">Margottiere</h4>
                       <p className="text-wedding-charcoal/70 italic mb-2">(10 minute walk from Chateau de Vallery; 300 meters or 0.2 miles)</p>
                       <ul className="list-disc pl-5 mb-2 text-wedding-charcoal/80">
-                        <li>4 double rooms 80 euros/night, including breakfast</li>
-                        <li>2 triple rooms 95 euros/night, including breakfast</li>
+                        <li>4 double rooms, including breakfast</li>
+                        <li>2 triple rooms, including breakfast</li>
                       </ul>
                       <p className="text-wedding-charcoal/80"><strong>Contact:</strong> La Margottière, 89150 VALLERY (France) +33 3 86 97 57 97</p>
                     </div>
@@ -65,7 +65,7 @@ const Accommodation = () => {
                       <h4 className="text-lg font-serif text-wedding-charcoal font-medium mb-2">Colette et Didier</h4>
                       <p className="text-wedding-charcoal/70 italic mb-2">(5 minute walk from Chateau de Vallery – same owner as Margottiere; 150 meters or 0.1 miles)</p>
                       <ul className="list-disc pl-5 mb-2 text-wedding-charcoal/80">
-                        <li>5 double rooms for 70 euros/night, including breakfast</li>
+                        <li>5 double rooms, including breakfast</li>
                       </ul>
                       <p className="text-wedding-charcoal/80"><strong>Contact:</strong> Colette: 18 Grande Rue, Vallery, 89150 +33 3 86 97 57 97</p>
                       <p className="text-wedding-charcoal/80">Please go to Margottiere to collect your keys</p>
@@ -74,8 +74,8 @@ const Accommodation = () => {
                     <div>
                       <h4 className="text-lg font-serif text-wedding-charcoal font-medium mb-2">Chez Krystyna</h4>
                       <ul className="list-disc pl-5 mb-2 text-wedding-charcoal/80">
-                        <li>5 double rooms for 90 euros/night</li>
-                        <li>1 double twin bed room 90 euros/night</li>
+                        <li>5 double rooms</li>
+                        <li>1 double twin bed room</li>
                       </ul>
                       <p className="text-wedding-charcoal/80"><strong>Contact:</strong> 1 place du Chateau, Vallery, 89150</p>
                       <p className="text-wedding-charcoal/80">Tel: +33 3 86 97 76 44</p>
@@ -85,7 +85,7 @@ const Accommodation = () => {
                     <div>
                       <h4 className="text-lg font-serif text-wedding-charcoal font-medium mb-2">Pequelette</h4>
                       <ul className="list-disc pl-5 mb-2 text-wedding-charcoal/80">
-                        <li>1 double room 75 euros/night, including breakfast</li>
+                        <li>1 double room, including breakfast</li>
                         <li>1 double twin bed room, including breakfast</li>
                       </ul>
                       <p className="text-wedding-charcoal/80"><strong>Contact:</strong> 1 place des Conde, Vallery</p>
@@ -97,8 +97,8 @@ const Accommodation = () => {
                     <div>
                       <h4 className="text-lg font-serif text-wedding-charcoal font-medium mb-2">Chez Marie-Reine</h4>
                       <ul className="list-disc pl-5 mb-2 text-wedding-charcoal/80">
-                        <li>4 double rooms, 55 euros/night</li>
-                        <li>Breakfast 5 euros extra</li>
+                        <li>4 double rooms</li>
+                        <li>Breakfast extra</li>
                       </ul>
                       <p className="text-wedding-charcoal/80"><strong>Contact:</strong> Marie-Reine 26 rue Pasteur, Vallery, 89150</p>
                       <p className="text-wedding-charcoal/80">+33 386975674</p>
@@ -119,7 +119,7 @@ const Accommodation = () => {
                       <h4 className="text-lg font-serif text-wedding-charcoal font-medium mb-2">La Renauderie</h4>
                       <p className="text-wedding-charcoal/70 italic mb-2">(5 minute drive from Chateau; 3k or 2 miles)</p>
                       <ul className="list-disc pl-5 mb-2 text-wedding-charcoal/80">
-                        <li>3 double rooms 75 euros/night, including breakfast</li>
+                        <li>3 double rooms, including breakfast</li>
                       </ul>
                     </div>
                     
@@ -127,7 +127,7 @@ const Accommodation = () => {
                       <h4 className="text-lg font-serif text-wedding-charcoal font-medium mb-2">Clos Melusine</h4>
                       <p className="text-wedding-charcoal/70 italic mb-2">(5 minute drive from chateau; 4k or 2.5 miles)</p>
                       <ul className="list-disc pl-5 mb-2 text-wedding-charcoal/80">
-                        <li>4 double or single rooms 60-65 euros/night, including breakfast</li>
+                        <li>4 double or single rooms, including breakfast</li>
                       </ul>
                     </div>
                   </div>
