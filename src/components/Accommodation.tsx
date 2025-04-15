@@ -30,14 +30,14 @@ const Accommodation = () => {
             <div className="flex items-start gap-4 mb-6">
               <Bed className="text-wedding-gold shrink-0 mt-1" size={24} />
               <p className="text-lg text-wedding-charcoal/80">
-                Since all of the wedding events will be held at the chateau, we'll be reserving rooms for you.
+                {t('explain_rooms','Since all of the wedding events will be held at the chateau, we\'ll be reserving rooms for you.')}                
               </p>
             </div>
             
             <div className="flex items-start gap-4">
               <MapPin className="text-wedding-gold shrink-0 mt-1" size={24} />
               <p className="text-lg text-wedding-charcoal/80">
-                For those who like to stay more time, we will organize local Bed & Breakfasts and hotel options for you. Most are walking distance or a very short drive! If you are eager to book now, please refer to the recommendations below and let us know what your plan is.
+                {t('explain_hotels','For those who like to stay more time, we will organize local Bed & Breakfasts and hotel options for you. Most are walking distance or a very short drive! If you are eager to book now, please refer to the recommendations below and let us know what your plan is.')}
               </p>
             </div>
           </div>

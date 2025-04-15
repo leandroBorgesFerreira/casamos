@@ -5,11 +5,12 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/components/ui/use-toast";
 import { useForm, ValidationError } from '@formspree/react';
+import { useTranslation } from "react-i18next";
 
 const RSVPForm = () => {
-  const { toast } = useToast();
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -65,11 +66,11 @@ const RSVPForm = () => {
       <form onSubmit={handleSubmit} className="bg-white p-6 md:p-8 rounded-lg shadow-md max-w-xl mx-auto">
         <div className="space-y-6">
           <div className="space-y-4">
-            <Label htmlFor="name">Your Name</Label>
+            <Label htmlFor="name">{t('your_name', 'Your Name')}</Label>
             <Input
               id="name"
               name="name"
-              placeholder="Enter your full name"
+              placeholder={t('enter_full_name', "Enter your full name")}
               value={formData.name}
               onChange={handleChange}
               required
@@ -78,12 +79,12 @@ const RSVPForm = () => {
           </div>
           
           <div className="space-y-4">
-            <Label htmlFor="email">Email Address</Label>
+            <Label htmlFor="email">{t('email_address', 'Email Address')}</Label>
             <Input
               id="email"
               name="email"
               type="email"
-              placeholder="Enter your email"
+              placeholder={t('fill_email', "Enter your email")}
               value={formData.email}
               onChange={handleChange}
               required
@@ -92,15 +93,15 @@ const RSVPForm = () => {
           </div>
           
           <div className="space-y-4">
-            <Label>Will you be attending?</Label>
+            <Label>{t('confirmation', "Will you be attending?")}</Label>
             <RadioGroup value={formData.attendance} onValueChange={handleRadioChange} className="flex flex-col space-y-2">
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="yes" id="attending-yes" />
-                <Label htmlFor="attending-yes" className="font-normal">Yes, I'll be there</Label>
+                <Label htmlFor="attending-yes" className="font-normal">{t('yes_confirmation', "Yes, I'll be there")}</Label>
               </div>
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="no" id="attending-no" />
-                <Label htmlFor="attending-no" className="font-normal">Unfortunately, I can't make it</Label>
+                <Label htmlFor="attending-no" className="font-normal">{t('no_confirmation', "Unfortunately, I can't make it")}</Label>
               </div>
             </RadioGroup>
           </div>
@@ -108,7 +109,7 @@ const RSVPForm = () => {
           {formData.attendance === "yes" && (
             <>
               <div className="space-y-4">
-                <Label htmlFor="guests">Number of Guests (including yourself)</Label>
+                <Label htmlFor="guests">{t('number_guests', "Number of Guests (including yourself)")}</Label>
                 <Input
                   id="guests"
                   name="guests"
@@ -122,11 +123,11 @@ const RSVPForm = () => {
               </div>
               
               <div className="space-y-4">
-                <Label htmlFor="dietaryRestrictions">Dietary Restrictions</Label>
+                <Label htmlFor="dietaryRestrictions">{t('food_restriction', "Dietary Restrictions")}</Label>
                 <Textarea
                   id="dietaryRestrictions"
                   name="dietaryRestrictions"
-                  placeholder="Please let us know of any dietary restrictions or allergies"
+                  placeholder={t('food_restriction_explanation', "Please let us know of any dietary restrictions or allergies")}
                   value={formData.dietaryRestrictions}
                   onChange={handleChange}
                   className="border-wedding-sage/60 focus:border-wedding-sage focus:ring-wedding-sage"
@@ -136,11 +137,11 @@ const RSVPForm = () => {
           )}
           
           <div className="space-y-4">
-            <Label htmlFor="message">Message to the Couple (Optional)</Label>
+            <Label htmlFor="message">{t('message_to_couple', "Message to the Couple (Optional)")}</Label>
             <Textarea
               id="message"
               name="message"
-              placeholder="Share your well wishes or any message for us"
+              placeholder={t('message_to_couple_explanation', "Share your well wishes or any message for us")}
               value={formData.message}
               onChange={handleChange}
               className="border-wedding-sage/60 focus:border-wedding-sage focus:ring-wedding-sage"
@@ -152,7 +153,8 @@ const RSVPForm = () => {
             className="w-full bg-wedding-sage hover:bg-wedding-sage/80 text-wedding-charcoal"
             disabled={state.submitting}
           >
-            Submit RSVP
+            {t('send_form', "Submit RSVP")}
+            
           </Button>
         </div>
       </form>

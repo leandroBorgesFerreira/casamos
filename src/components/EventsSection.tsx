@@ -1,5 +1,6 @@
 
 import { Clock, MapPin } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const events = [
   {
@@ -93,10 +94,12 @@ const EventCard = ({ event, index }: { event: typeof events[0], index: number })
 };
 
 const EventsSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="events" className="wedding-section bg-gradient-to-b from-wedding-cream to-wedding-blush/20">
       <div className="wedding-container">
-        <h2 className="fancy-heading text-4xl md:text-5xl mb-10">Our Events</h2>
+        <h2 className="fancy-heading text-4xl md:text-5xl mb-10">{t('our_events', 'Our Events')}</h2>
         
         <div className="flex justify-center mb-12">
           <div className="relative max-w-md mx-auto">
@@ -114,7 +117,7 @@ const EventsSection = () => {
         </div>
         
         <p className="text-center text-lg max-w-3xl mx-auto mb-12 font-serif italic text-wedding-charcoal/80">
-          All our wedding festivities will be held at the beautiful Chateau de Vallery, a historic French castle that will provide a romantic backdrop for our celebration.
+          {t('events_subtitle', 'All our wedding festivities will be held at the beautiful Chateau de Vallery, a historic French castle that will provide a romantic backdrop for our celebration.')}          
         </p>
         
         <div className="flex flex-col gap-8">

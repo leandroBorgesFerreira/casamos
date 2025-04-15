@@ -12,17 +12,17 @@ const Gallery = () => {
     {
       src: "/lovable-uploads/7330bc96-5f5d-4167-a706-439027e4adcd.png",
       alt: "Beautiful chateau pool area with stone buildings and greenery",
-      caption: "The Chateau Pool"
+      caption: t('castle_pool', 'The Chateau Pool')
     },
     {
       src: "/lovable-uploads/21a972c1-c66d-4d94-8418-60745ca16608.png",
       alt: "Aerial view of the entire chateau estate with gardens",
-      caption: "Aerial View of Château de Villette"
+      caption: t('aerial_view', 'Aerial View of Château de Villette')
     },
     {
       src: "/lovable-uploads/feb9571b-a58f-43b1-b04b-f9ecb73e25d4.png",
       alt: "Front view of the main chateau building and stone wall",
-      caption: "The Main Château"
+      caption: t('main_castle', "The Main Château")
     },
     {
       src: "/lovable-uploads/231b5b75-3e7e-4db7-a313-37a7571824c5.png",
@@ -59,8 +59,7 @@ const Gallery = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-serif text-center mb-3">{t('our_venue', 'Our Venue')}</h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          {t("join_us", "Join us at the beautiful Château de Vallery in France, where we'll celebrate our special day surrounded by historic architecture and breathtaking gardens.")}
-          
+          {t("join_us", "Join us at the beautiful Château de Vallery in France, where we'll celebrate our special day surrounded by historic architecture and breathtaking gardens.")}          
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
