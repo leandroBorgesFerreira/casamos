@@ -1,22 +1,25 @@
 
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section 
       id="home" 
       className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-[#f5eee8]"
     >
       <div className="container mx-auto px-4 relative z-10 text-center">
-        <p className="text-gray-600 tracking-[0.2em] uppercase mb-6">WE ARE GETTING MARRIED</p>
+        <p className="text-gray-600 tracking-[0.2em] uppercase mb-6">{t('getting_married','WE ARE GETTING MARRIED')}</p>
         
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif mb-6 text-[#333333]">
           Gabriela <span className="font-serif">&</span> Leandro
         </h1>
         
         <p className="text-lg md:text-xl text-gray-700 mb-10 font-serif italic">
-          October 5-7, 2025 • Celebration of Love
+          {t('date_celebration','October 5-7, 2025 • Celebration of Love')}
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
@@ -24,7 +27,7 @@ const Hero = () => {
             href="#events" 
             className="inline-block bg-[#d8e2d7] hover:bg-[#c5d3c3] text-gray-700 px-8 py-3 rounded-md text-lg transition-colors duration-300 min-w-[200px]"
           >
-            View Events
+            {t('view_events','View Events')}            
           </a>
           <a 
             href="#rsvp" 

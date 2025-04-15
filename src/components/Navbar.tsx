@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useIsMobile } from '../hooks/use-mobile';
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,11 +17,13 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const { t } = useTranslation();
+
   const navLinks = [
     { name: "Home", href: "#home" },
-    { name: "Venue", href: "#venue" },
-    { name: "Schedule", href: "#events" },
-    { name: "Accommodation", href: "#accommodation" },
+    { name: t('venue', 'Venue'), href: "#venue" },
+    { name: t('schedule', 'Schedule'), href: "#events" },
+    { name: t('accomodation', 'Accommodation'), href: "#accommodation" },
     { name: "RSVP", href: "#rsvp" }
   ];
 

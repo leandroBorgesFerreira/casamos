@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Dialog, DialogContent } from "./ui/dialog";
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Gallery = () => {
   const [open, setOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(0);
+  const { t } = useTranslation();
 
   const images = [
     {
@@ -55,9 +57,10 @@ const Gallery = () => {
   return (
     <section id="venue" className="py-16 bg-stone-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-serif text-center mb-3">Our Venue</h2>
+        <h2 className="text-4xl md:text-5xl font-serif text-center mb-3">{t('our_venue', 'Our Venue')}</h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          Join us at the beautiful Château de Vallery in France, where we'll celebrate our special day surrounded by historic architecture and breathtaking gardens.
+          {t("join_us", "Join us at the beautiful Château de Vallery in France, where we'll celebrate our special day surrounded by historic architecture and breathtaking gardens.")}
+          
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

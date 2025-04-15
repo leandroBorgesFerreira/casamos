@@ -7,9 +7,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { useTranslation } from 'react-i18next';
 
 const Accommodation = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="accommodation" className="wedding-section bg-wedding-cream">
       <div className="wedding-container">
@@ -20,7 +22,8 @@ const Accommodation = () => {
             <div className="flex items-start gap-4 mb-6">
               <Hotel className="text-wedding-gold shrink-0 mt-1" size={24} />
               <p className="text-lg text-wedding-charcoal/80">
-                We have reserved Chateau de Vallery for three days and two nights: Sunday October 5th & Monday 6th October and Tuesday 7th.
+                {t('reserve','We have reserved Chateau de Vallery for three days and two nights: Sunday October 5th & Monday 6th October and Tuesday 7th.')}
+                
               </p>
             </div>
             

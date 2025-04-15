@@ -1,7 +1,10 @@
 
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Countdown = () => {
+  const { t } = useTranslation();
+
   // Wedding date: October 6, 2025
   const weddingDate = new Date('October 6, 2025 16:00:00').getTime();
   
@@ -34,16 +37,16 @@ const Countdown = () => {
   }, []);
   
   const counterItems = [
-    { label: 'Days', value: timeLeft.days },
-    { label: 'Hours', value: timeLeft.hours },
-    { label: 'Minutes', value: timeLeft.minutes },
-    { label: 'Seconds', value: timeLeft.seconds }
+    { label: t('days', 'Days'), value: timeLeft.days },
+    { label: t('hours', 'Hours'), value: timeLeft.hours },
+    { label: t('minutes', 'Minutes'), value: timeLeft.minutes },
+    { label: t('second', 'Seconds'), value: timeLeft.seconds }
   ];
   
   return (
     <section className="wedding-section bg-wedding-sage/20 py-16">
       <div className="wedding-container">
-        <h2 className="fancy-heading text-4xl mb-12">Countdown to Our Big Day</h2>
+        <h2 className="fancy-heading text-4xl mb-12">{t('count_down', 'Countdown to Our Big Day')}</h2>
         
         <div className="flex flex-wrap justify-center gap-4 md:gap-8">
           {counterItems.map((item, index) => (
