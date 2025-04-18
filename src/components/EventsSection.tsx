@@ -8,7 +8,7 @@ const events = [
     date: "October 5, 2025",
     day: "Sunday",
     title: "Wedding Ceremony & Reception",
-    time: "17:00 - 00:00",
+    time: "18:00 - 03:00",
     description: "Our wedding ceremony will take place followed by cocktail hour, dinner, and dancing to celebrate our union.",
     location: "Chateau de Vallery",
     address: "Chateau de Vallery, Vallery, France"
@@ -17,7 +17,7 @@ const events = [
     id: 2,
     date: "October 6, 2025",
     day: "Monday",
-    title: "Recover Brunch",
+    title: "Recovery Brunch",
     time: "9:00 - 15:00",
     description: "Join us to enjoy a relax moment with pool, friends, music and food to recover after our big party.",
     location: "Chateau de Vallery",
