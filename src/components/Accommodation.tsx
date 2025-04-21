@@ -113,24 +113,24 @@ const Accommodation = () => {
               <AccordionItem value="item-2" className="bg-white rounded-lg border border-wedding-sage/20 overflow-hidden">
                 <AccordionTrigger className="px-6 py-4 hover:no-underline">
                   <div className="flex flex-col items-start text-left">
-                    <span className="text-xl font-serif">Bed & Breakfasts within a 5 minute drive</span>
+                    <span className="text-xl font-serif">{t('bandb_5_min_drive', 'Bed & Breakfasts within a 5 minute drive')}</span>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4">
                   <div className="space-y-6">
                     <div>
                       <h4 className="text-lg font-serif text-wedding-charcoal font-medium mb-2">La Renauderie</h4>
-                      <p className="text-wedding-charcoal/70 italic mb-2">(5 minute drive from Chateau; 3k or 2 miles)</p>
+                      <p className="text-wedding-charcoal/70 italic mb-2">{t('renauderie_explain', '(5 minute drive from Chateau; 3k or 2 miles)')}</p>
                       <ul className="list-disc pl-5 mb-2 text-wedding-charcoal/80">
-                        <li>3 double rooms, including breakfast</li>
+                        <li>{t('renauderie_rooms', '3 double rooms, including breakfast')}</li>
                       </ul>
                     </div>
                     
                     <div>
                       <h4 className="text-lg font-serif text-wedding-charcoal font-medium mb-2">Clos Melusine</h4>
-                      <p className="text-wedding-charcoal/70 italic mb-2">(5 minute drive from chateau; 4k or 2.5 miles)</p>
+                      <p className="text-wedding-charcoal/70 italic mb-2">{t('melusine_explain', '(5 minute drive from chateau; 4k or 2.5 miles)')}</p>
                       <ul className="list-disc pl-5 mb-2 text-wedding-charcoal/80">
-                        <li>4 double or single rooms, including breakfast</li>
+                      <li>{t('melusine_rooms', '4 double or single rooms, including breakfast')}</li>
                       </ul>
                     </div>
                   </div>

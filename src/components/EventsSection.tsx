@@ -2,59 +2,6 @@
 import { Clock, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-const events = [
-  {
-    id: 1,
-    date: "October 5, 2025",
-    day: "Sunday",
-    title: "Wedding Ceremony & Reception",
-    time: "18:00 - 03:00",
-    description: "Our wedding ceremony will take place followed by cocktail hour, dinner, and dancing to celebrate our union.",
-    location: "Chateau de Vallery",
-    address: "Chateau de Vallery, Vallery, France"
-  },
-  {
-    id: 2,
-    date: "October 6, 2025",
-    day: "Monday",
-    title: "Recovery Brunch",
-    time: "9:00 - 15:00",
-    description: "Join us to enjoy a relax moment with pool, friends, music and food to recover after our big party.",
-    location: "Chateau de Vallery",
-    address: "Chateau de Vallery, Vallery, France"
-  },
-  {
-    id: 3,
-    date: "October 6, 2025",
-    day: "Monday",
-    title: "Gala Dinner",
-    time: "19:00 - 22:00",
-    description: "Enjoy an elegant evening of france dining and entertainment to celebrate our union.",
-    location: "Chateau de Vallery",
-    address: "Chateau de Vallery, Vallery, France"
-  },
-  {
-    id: 4,
-    date: "October 6, 2025",
-    day: "Monday",
-    title: "Wine and Cheese",
-    time: "22:00 - 00:00",
-    description: "A night of wines and food to celebrate our union.",
-    location: "Chateau de Vallery",
-    address: "Chateau de Vallery, Vallery, France"
-  },
-  {
-    id: 5,
-    date: "October 7, 2025",
-    day: "Tuesday",
-    title: "Goodbye Breakfast & Love",
-    time: "9:00 - 12:00",
-    description: "Join us for a farewell breakfast as we conclude our wedding celebration weekend. Share your favorite moments from the festivities before departing.",
-    location: "Chateau de Vallery",
-    address: "Chateau de Vallery, Vallery, France"
-  }
-];
-
 const EventCard = ({ event, index }: { event: typeof events[0], index: number }) => {
   return (
     <div className="event-card animate-fade-in" style={{ animationDelay: `${0.2 * index}s` }}>
@@ -95,6 +42,59 @@ const EventCard = ({ event, index }: { event: typeof events[0], index: number })
 
 const EventsSection = () => {
   const { t } = useTranslation();
+
+  const events = [
+    {
+      id: 1,
+      date: t('october_5', 'October 5, 2025'),
+      day: t('sunday', 'Sunday'),
+      title: t('wedding_ceremony', "Wedding Ceremony & Reception"),
+      time: "18:00 - 03:00",
+      description:  t('wedding_ceremony_description', "Our wedding ceremony will take place followed by cocktail hour, dinner, and dancing to celebrate our union."),
+      location: "Chateau de Vallery",
+      address: "Chateau de Vallery, Vallery, France"
+    },
+    {
+      id: 2,
+      date: t('october_6', 'October 6, 2025'),
+      day: t('monday', 'Monday'),
+      title: t('monday_brunch_title', "Recovery Brunch"),
+      time: "9:00 - 15:00",
+      description: t('monday_brunch_description', "Join us to enjoy a relax moment with pool, friends, music and food to recover after our big party."),
+      location: "Chateau de Vallery",
+      address: "Chateau de Vallery, Vallery, France"
+    },
+    {
+      id: 3,
+      date: t('october_6', 'October 6, 2025'),
+      day: t('monday', 'Monday'),
+      title: t('monday_dinner_title', "Gala Dinner"),
+      time: "19:00 - 22:00",
+      description: t('monday_dinner_explain', "Enjoy an elegant evening of france dining and entertainment to celebrate our union."),
+      location: "Chateau de Vallery",
+      address: "Chateau de Vallery, Vallery, France"
+    },
+    {
+      id: 4,
+      date: t('october_6', 'October 6, 2025'),
+      day: t('monday', 'Monday'),
+      title: t('monday_wine_cheese_title', "Wine and Cheese"),
+      time: "22:00 - 00:00",
+      description: t('monday_wine_cheese_explain', "A night of wines and food to celebrate our union."),
+      location: "Chateau de Vallery",
+      address: "Chateau de Vallery, Vallery, France"
+    },
+    {
+      id: 5,
+      date: t('october_7', 'October 7, 2025'),
+      day: t('tuesday', 'Tuesday'),
+      title: t('tuesday_breakfast_title', 'Goodbye Breakfast'),
+      time: "9:00 - 12:00",
+      description: t('tuesday_breakfast_description', "Join us for a farewell breakfast as we conclude our wedding celebration weekend. Share your favorite moments from the festivities before departing."),
+      location: "Chateau de Vallery",
+      address: "Chateau de Vallery, Vallery, France"
+    }
+  ];
 
   return (
     <section id="events" className="wedding-section bg-gradient-to-b from-wedding-cream to-wedding-blush/20">
