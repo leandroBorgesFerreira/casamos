@@ -43,42 +43,42 @@ const Accommodation = () => {
           </div>
           
           <div className="mt-12">
-            <h3 className="text-2xl font-serif text-center mb-8">Local Accommodations</h3>
+            <h3 className="text-2xl font-serif text-center mb-8">{t('local_accommodations', 'Local Accommodations')}</h3>
             
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1" className="bg-white mb-4 rounded-lg border border-wedding-sage/20 overflow-hidden">
                 <AccordionTrigger className="px-6 py-4 hover:no-underline">
                   <div className="flex flex-col items-start text-left">
-                    <span className="text-xl font-serif">Bed & Breakfasts within walking distance</span>
+                    <span className="text-xl font-serif">{t('bandb_walk_section', 'Bed & Breakfasts within walking distance<')}</span>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4">
                   <div className="space-y-6">
                     <div>
                       <h4 className="text-lg font-serif text-wedding-charcoal font-medium mb-2">Margottiere</h4>
-                      <p className="text-wedding-charcoal/70 italic mb-2">(10 minute walk from Chateau de Vallery; 300 meters or 0.2 miles)</p>
+                      <p className="text-wedding-charcoal/70 italic mb-2">{t('margottiere_section1', '10 minute walk from Chateau de Vallery; 300 meters or 0.2 miles')}</p>
                       <ul className="list-disc pl-5 mb-2 text-wedding-charcoal/80">
-                        <li>4 double rooms, including breakfast</li>
-                        <li>2 triple rooms, including breakfast</li>
+                        <li>{t('margottiere_rooms1', '4 double rooms, including breakfast')}</li>
+                        <li>{t('margottiere_rooms2', '2 triple rooms, including breakfast')}</li>
                       </ul>
                       <p className="text-wedding-charcoal/80"><strong>Contact:</strong> La Margottière, 89150 VALLERY (France) +33 3 86 97 57 97</p>
                     </div>
                     
                     <div>
                       <h4 className="text-lg font-serif text-wedding-charcoal font-medium mb-2">Colette et Didier</h4>
-                      <p className="text-wedding-charcoal/70 italic mb-2">(5 minute walk from Chateau de Vallery – same owner as Margottiere; 150 meters or 0.1 miles)</p>
+                      <p className="text-wedding-charcoal/70 italic mb-2">{t('collete_subtitle', '(5 minute walk from Chateau de Vallery – same owner as Margottiere; 150 meters or 0.1 miles)')}</p>
                       <ul className="list-disc pl-5 mb-2 text-wedding-charcoal/80">
-                        <li>5 double rooms, including breakfast</li>
+                        <li>{t('collete_rooms1', '5 double rooms, including breakfast')}</li>
                       </ul>
                       <p className="text-wedding-charcoal/80"><strong>Contact:</strong> Colette: 18 Grande Rue, Vallery, 89150 +33 3 86 97 57 97</p>
-                      <p className="text-wedding-charcoal/80">Please go to Margottiere to collect your keys</p>
+                      <p className="text-wedding-charcoal/80">{t('collete_info', 'Please go to Margottiere to collect your keys')}</p>
                     </div>
                     
                     <div>
                       <h4 className="text-lg font-serif text-wedding-charcoal font-medium mb-2">Chez Krystyna</h4>
                       <ul className="list-disc pl-5 mb-2 text-wedding-charcoal/80">
-                        <li>5 double rooms</li>
-                        <li>1 double twin bed room</li>
+                        <li>{t('chez_rooms1', '5 double rooms')}</li>
+                        <li>{t('chez_rooms2', '1 double twin bed room')}</li>
                       </ul>
                       <p className="text-wedding-charcoal/80"><strong>Contact:</strong> 1 place du Chateau, Vallery, 89150</p>
                       <p className="text-wedding-charcoal/80">Tel: +33 3 86 97 76 44</p>
@@ -88,8 +88,8 @@ const Accommodation = () => {
                     <div>
                       <h4 className="text-lg font-serif text-wedding-charcoal font-medium mb-2">Pequelette</h4>
                       <ul className="list-disc pl-5 mb-2 text-wedding-charcoal/80">
-                        <li>1 double room, including breakfast</li>
-                        <li>1 double twin bed room, including breakfast</li>
+                        <li>{t('pequelette_rooms1', '1 double room, including breakfast')}</li>
+                        <li>{t('pequelette_rooms2', '1 double twin bed room, including breakfast')}</li>
                       </ul>
                       <p className="text-wedding-charcoal/80"><strong>Contact:</strong> 1 place des Conde, Vallery</p>
                       <p className="text-wedding-charcoal/80">roseline.chabolle@orange.fr</p>
@@ -100,8 +100,8 @@ const Accommodation = () => {
                     <div>
                       <h4 className="text-lg font-serif text-wedding-charcoal font-medium mb-2">Chez Marie-Reine</h4>
                       <ul className="list-disc pl-5 mb-2 text-wedding-charcoal/80">
-                        <li>4 double rooms</li>
-                        <li>Breakfast extra</li>
+                        <li>{t('chez_marie_rooms1', '4 double rooms')}</li>
+                        <li>{t('extra_breakfast', 'Breakfast extra')}</li>                        
                       </ul>
                       <p className="text-wedding-charcoal/80"><strong>Contact:</strong> Marie-Reine 26 rue Pasteur, Vallery, 89150</p>
                       <p className="text-wedding-charcoal/80">+33 386975674</p>

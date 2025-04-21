@@ -32,5 +32,20 @@
     "food_restriction_explanation": "Please let us know of any dietary restrictions or allergies",
     "message_to_couple": "Message to the Couple (Optional)",
     "message_to_couple_explanation": "Share your well wishes or any message for us",
-    "send_form": "Submit RSVP"
+    "send_form": "Submit RSVP",
+    "date": "October 5-7, 2025",
+    "local_accommodations": "Local Accommodations",
+    "bandb_walk_section": "Bed & Breakfasts within walking distance",
+    "margottiere_section1": "(10 minute walk from Chateau de Vallery; 300 meters or 0.2 miles)",
+    "margottiere_rooms1": "4 double rooms, including breakfast",
+    "margottiere_rooms2": "2 triple rooms, including breakfast",
+    "collete_subtitle": "(5 minute walk from Chateau de Vallery – same owner as Margottiere; 150 meters or 0.1 miles)",
+    "collete_rooms1": "5 double rooms, including breakfast",
+    "collete_info": "Please go to Margottiere to collect your keys",
+    "chez_rooms1": "5 double rooms",
+    "chez_rooms2": "1 double twin bed room",
+    "pequelette_rooms1": "1 double room, including breakfast",
+    "pequelette_rooms2": "1 double twin bed room, including breakfast",
+    "chez_marie_rooms1": "4 double rooms",
+    "extra_breakfast": "Breakfast extra"
 }

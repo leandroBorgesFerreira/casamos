@@ -1,7 +1,10 @@
 
 import { Heart } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-wedding-sage/30 py-10">
       <div className="container mx-auto px-4 text-center">
@@ -12,12 +15,9 @@ const Footer = () => {
         </div>
         
         <p className="text-wedding-charcoal/70 mb-6">
-          October 5-7, 2025
-        </p>
-        
-        <div className="text-sm text-wedding-charcoal/60">
-          <p>Made with love, © 2025</p>
-        </div>
+          {t('date', "October 5-7, 2025")}
+          
+        </p>            
       </div>
     </footer>
   );
